@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jquery Mobile</title>
+<!-- if this isnt set many mobile browsers will use a virtual page around 900 pixels-->
+<meta name="viewport" content="width-device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<link rel="stylesheet" href="css/main.css" media="screen">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+</head>
+
+<body>
+<!-- Start of Page-->
+<!--each view or page is identified with an element, usually a div with a data-role attribute-->
+	<div data-role="page" id="home">
+    	<div data-role="header" data-theme="e">
+			<h1>Fishing Lures</h1>
+        </div>
+        
+        <div data-role="content">
+        	<ul data-role="listview" data-inset="true" data-filter="true">
+           
+           <li><a href="#rapala">
+           <h1>Rapula</h1>
+           <img src="images/picrapalaxrap1_thumb.jpg" alt="x-rap"/>
+           <p>Rapula X-rap</p>
+           </a></li> 
+			
+          <li><a href="#storm">
+           <h1>Storm</h1>
+           <img src="images/storm_thumb.jpg" alt="storm">
+           <p>Stormy Weather</p>
+           </a></li>
+           
+           <li><a href="#">Cotton-Cordel</a></li> 
+           <li><a href="#">Banana Nose</a></li> 
+           <li><a href="#">Smelly Tits</a></li> 
+            
+            </ul>
+            <img id="bass" src="images/bass.jpg" alt="bass">
+        </div> <!--closing div for content-->
+        
+        <div data-role="footer" data-theme="e" data-position="fixed">
+        	<nav data-role="navbar">
+           	<ul>
+            		<li><a href="#home" data-icon="home">Home</a></li>
+                  <li><a href="#info" data-icon="info" data-rel="dialog">Info</a></li>
+				</ul> 
+           </nav>
+        </div>
+        
+    </div><!--closing div for home-->
+    
+    <!--Start of Rapala Page-->
+    
+    <div data-role="page" id="rapala">
+    	
+        <div data-role="header" data-theme="d">
+        	<h3>Rapala Lures</h3>
+            <a data-role="button" href="#home" data-icon="home" data-theme="d">Home</a>
+        </div><!--End of header-->
+        
+        <div data-role="content">
+        
+        	<h2>Rapala - X-Rap</h2>
+        
+        <div id="rapalaLure" class="ui-grid-a">
+        	
+           <div class="ui-block-a">
+           <img src="images/picrapalaxrap1.jpg" alt="some dumb pic" id="xrap"/>
+           </div>
+        
+        	<div class="ui-block-b">
+           	<h4>Features</h4>
+            		<ul>
+                		<li>Being Boring</li>
+                  	<li>Bitey Teeth</li>
+						<li>Catches dinner</li>  
+                    
+                  </ul>
+     
+			</div>
+        
+        </div><!--grid closing tag-->
+        
+        	<div class="ui-grid-solo">
+           	<div class="ui-block-a">
+            		<p>
+                   
+The X-Rap® is "all about the action." The versatility of the X-Rap allows an angler to impart a number of fish-catching actions in a single retrieve. Casts like a bullet for long accurate casts.
+</p>
+<p>
+Prominent scales and lateral line on the fuselage capture and flash light like a beacon. It can be fished both in an aggressive "Slashbait®" technique or with a classic Rapala® wobble.
+</p>
+<p>
+The angler defines the cadence for maximum effectiveness. Loaded with features from tip to tail, textured translucent body, internal holographic foil, internal long cast system (XR04 excluded), 3D holographic eyes, flash foil teaser tails, Slashbait® action, Rapala "wobble" action, suspends on pause. All topped off with premium VMC® black nickel hooks, each hand-tuned and tank-tested to ensure top performing action from the start.
+                  </p>
+            	</div> 
+           </div>
+           
+           <div data-role="collapsible-set" data-theme="d">
+           
+           	<div data-role="collapsible">
+            		<h3>Running Depth</h3>
+                  <p>2' to 3'</p>  
+            	</div>
+           
+           	<div data-role="collapsible">
+            		<h3>Body Length</h3>
+                  <p>1 1/2' to 300'</p>  
+            	</div>
+           
+           </div>
+        
+        </div><!--end of content-->
+    
+    <div data-role="footer" data-theme="d" data-position="fixed">
+    
+		<nav data-role="navbar">
+        	<ul>
+            <li><a href="#home" data-icon="home">Home</a></li>
+            <li><a href="#info" data-icon="info" data-rel="dialog">info</a></li>
+           </ul>
+        
+		</nav> 
+    
+    </div>
+    
+    
+    </div><!--End of Rapala-->
+    
+<div data-role="page" id="storm"><!--start of storm page-->
+
+<div data-role="header" data-theme="d">
+        	<h3>Storm Lures</h3>
+            <a data-role="button" href="#home" data-icon="home" data-theme="d">Home</a>
+        </div><!--End of header-->
+        
+        <div data-role="content">
+        
+        	<h2>Stormy STORM</h2>
+        
+        <div id="stormLure" class="ui-grid-a">
+        	
+           <div class="ui-block-a">
+           <img src="images/storm.jpg" alt="some dumb pic" id="storm"/>
+           </div>
+        
+        	<div class="ui-block-b">
+           	<h4>Features</h4>
+            		<ul>
+                		<li>Rain</li>
+                  	<li>Dark Clouds</li>
+						<li>Power Outages</li>  
+                    
+                  </ul>
+     
+			</div>
+        
+        </div><!--grid closing tag-->
+        
+        	<div class="ui-grid-solo">
+           	<div class="ui-block-a">
+            		<p>
+                   
+Storms can be extremely scary, especially if you are a dog or made out of metal.
+</p>
+<p>
+When faced with a storm front it is important that you make sure you are out of sight from any unknown people.  The loud crashes and bright flashes could cause you to shit your pants. Over and over again. Gross.
+</p>
+<p>
+The best way to get rid of a storm is to punch it in the face.  Now you might ask, where the fuck is the face? and you've obviously done your homework, because storms don't have faces. 
+                  </p>
+            	</div> 
+           </div>
+           
+           <div data-role="collapsible-set" data-theme="d">
+           
+           	<div data-role="collapsible">
+            		<h3>Storm Length</h3>
+                  <p>30 mins to 50 mins</p>  
+            	</div>
+           
+           	<div data-role="collapsible">
+            		<h3>Cloud Colour</h3>
+                  <p>BLACK or GREY</p>  
+            	</div>
+           
+           </div>
+        
+        </div><!--end of content-->
+    
+    <div data-role="footer" data-theme="d" data-position="fixed">
+    
+		<nav data-role="navbar">
+        	<ul>
+            <li><a href="#home" data-icon="home">Home</a></li>
+            <li><a href="#info" data-icon="info" data-rel="dialog">info</a></li>
+           </ul>
+        
+		</nav> 
+    
+    </div>
+
+</div><!--end of storm page -->
+    
+    <div data-role="page" id="info" data-theme="a">
+    
+    	<div data-role="header">
+        
+        	<h1>Fishing App</h1>
+        
+        		<div data-role="content">
+                <p>The Fishing App gives you the edge you need to cath the shittiest fish ever.  You can easily access info on lures probably nowhere because there is no cell service. idiot.</p>
+                
+                <a href="#" data-role="button" data-inline="true" data-rel="back">Cancel</a>
+                
+                <a href="#home" data-role="button" data-inline="true">Home</a>
+                
+                </div>
+        
+        </div><!--end div for info header-->
+    
+    </div><!--end div for info page-->
+    
+</body>
+</html>

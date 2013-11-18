@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#home, #rapala{
+	
+	background:#D0ECE1;
+		
+}
+
+#bass{
+	
+	display:block;
+	margin: 0 auto;
+	
+	
+}
+
+#xrap{
+	
+	max-width: 100%;
+	
+}
+
+#rapala h4{
+	
+	margin-left:22px;
+	margin-top:0;
+	
+}
